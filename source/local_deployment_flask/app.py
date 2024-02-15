@@ -25,7 +25,7 @@ def home():
     return render_template('index.html')
 
 # Define predict endpoint. This function will be ran as soon as a user makes a POST request via the upload feature.
-@app.route('/', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     print('Running predict')
 
